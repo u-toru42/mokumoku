@@ -1,0 +1,35 @@
+<div class="card">
+  <div class="card-header">
+    <h3 class="mb-0">プロフィール</h3>
+  </div>
+  <!-- Card body -->
+  <div class="card-body">
+    <hr class="my-5">
+      <div>
+        <h4 class="mb-0">Personal Details</h4>
+          <div class="d-flex align-items-center mb-4 mb-lg-0">
+            <%= image_tag @user.decorate.avatar, class: 'rounded-circle avatar-lg' %>
+          </div>
+        <!-- Form -->
+        <%= form_with(model: @user, url: mypage_profile_path) do |f| %>
+          <div class="mb-3">
+            <%= f.label :email, class: 'form-label' %>
+            <%= @user.email %>
+          </div>
+          <div class="mb-3">
+            <%= f.label :name, class: 'form-label' %>
+            <%= @user.name %>
+          </div>
+          <!-- hobby欄を追加-->
+          <div class="mb-3">
+            <%= f.label :hobby, class: 'form-label' %>
+            <%= @user.hobby %>
+          </div>
+          <!-- profile欄を追加 -->
+          <div class="mb-3">
+            <%= f.label :profile, class: 'form-label' %>
+            <%= @user.profile %>
+          </div>
+        <% end %>
+      </div>
+    </div>
