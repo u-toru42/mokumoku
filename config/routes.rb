@@ -19,6 +19,7 @@ Rails.application.routes.draw do
     resource :bookmark, only: %i[create destroy], module: :events
     resources :comments, only: %i[create destroy], module: :events
   end
+  resource :profiles, only: %i[show]
 
   resources :notifications, only: %i[index show]
   namespace :notifications do
