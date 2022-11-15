@@ -39,6 +39,34 @@
           null
         ]
       },
+      "/Users/toru/workspace/runteq/mokumoku/spec/models/relationship_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/toru/workspace/runteq/mokumoku/app/models/relationship.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/toru/workspace/runteq/mokumoku/app/models/application_record.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/toru/workspace/runteq/mokumoku/spec/models/user_spec.rb": {
         "lines": [
           null,
@@ -148,6 +176,14 @@
           1,
           1,
           1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
           null,
           52,
           52,
@@ -211,15 +247,21 @@
           1,
           0,
           null,
-          null
-        ]
-      },
-      "/Users/toru/workspace/runteq/mokumoku/app/models/application_record.rb": {
-        "lines": [
           null,
           null,
           1,
+          0,
+          null,
+          null,
+          null,
           1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
           null
         ]
       },
@@ -1252,6 +1294,6 @@
         ]
       }
     },
-    "timestamp": 1668483101
+    "timestamp": 1668485313
   }
 }

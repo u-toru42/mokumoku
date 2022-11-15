@@ -9,8 +9,28 @@
         <%= f.search_field :title_or_content_cont, class: 'form-control form-control-sm me-2', placeholder: 'もくもく会検索' %>
         <%= f.submit '検索', class: 'btn btn-outline-success btn-sm'  %>
       <% end %>
+
+
       <% if logged_in? %>
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item d-flex align-items-center">
+            <!-- フォロー/フォロワー枠 -->
+            <% @user ||= current_user %>
+            <div class="stats">
+              <a href="<%= following_user_path(@user) %>">
+                <strong id="following" class="stat">
+                  <%= @user.following.count %>
+                </strong>
+                フォロー
+              </a>
+              <a href="<%= followers_user_path(@user) %>">
+                <strong id="followers" class="stat">
+                  <%= @user.followers.count %>
+                </strong>
+                フォロワー
+              </a>
+            </div>
+          </li>
           <li class="nav-item d-flex align-items-center">
             <%= link_to 'もくもく会を作る', new_event_path, class: 'btn btn-primary btn-sm me-2' %>
           </li>
