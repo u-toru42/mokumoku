@@ -16,6 +16,25 @@ class UsersController < ApplicationController
     end
   end
 
+  def show
+    # プロファイル全般
+    @user = User.find(params[:id])
+    # フォロー関係
+    @events = @user.events.page(params[:page]).reverse_order
+    @following_users = @user.following_user
+    @follower_users = @user.follower_user
+  end
+
+  def follows
+    @user = User.find_by(params[:id])
+    @users = @user.following_user.page(params[:page]).per(3).reverse_order
+  end
+
+  def followers
+    @user = User.find_by(params[:id])
+    @users = @user.follower_user.page(params[:page]).per(3).reverse_order
+  end
+
   def user_params
     params.require(:user).permit(:email, :name, :password, :password_confirmation, :hobby, :profile)
   end
