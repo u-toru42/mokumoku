@@ -111,12 +111,11 @@
           参加者（<%= @event.attendees.size %>人）
         </div>
         <div class="card-body">
-           <ul class="list-unstyled">
-             <%= render partial: 'events/attendee', collection: @event.attendees %>
-           </ul>
+          <ul class="list-unstyled">
+            <%= render partial: 'events/attendee', collection: @event.attendees %>
+          </ul>
         </div>
       </div>
-
       <div class="card">
         <div class="card-header">
           <i class="bi bi-chat"></i>
@@ -125,7 +124,6 @@
         <div class="card-body">
           <ul class="list-unstyled">
             <%= render partial: 'events/comment', collection: @event.comments %>
-
           </ul>
           <%= form_with model: [@event, @comment || Comment.new] do |f| %>
             <div class="mb-3">
