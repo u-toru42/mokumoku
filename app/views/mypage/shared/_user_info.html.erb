@@ -17,6 +17,12 @@
           </h2>
           <p class="mb-0 d-block"><%= current_user.email %></p>
         </div>
+        <div class="d-flex">
+          <ul>
+            <i class="bi bi-check"></i><%= link_to "フォロー", follows_user_path(current_user) %>
+            <i class="bi bi-check"></i><%= link_to "フォロワー", followers_user_path(current_user) %>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
