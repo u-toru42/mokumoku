@@ -9,10 +9,11 @@ Rails.application.routes.draw do
   delete 'logout', to: 'sessions#destroy'
   get 'signup', to: 'users#new'
   post 'signup', to: 'users#create'
-  resources :users, only: %i[new create] do
+  resources :users, only: %i[new create show] do
     member do
-      get :following, :followers
+      get :follows, :followers
     end
+    resource :relationships, only: %i[create destroy]
   end
   resources :events do
     collection do
@@ -23,7 +24,7 @@ Rails.application.routes.draw do
     resource :bookmark, only: %i[create destroy], module: :events
     resources :comments, only: %i[create destroy], module: :events
   end
-  resource :profiles, only: %i[show]
+  resources :profiles, only: %i[show]
 
   resources :notifications, only: %i[index show]
   namespace :notifications do
