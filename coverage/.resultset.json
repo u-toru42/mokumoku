@@ -39,19 +39,33 @@
           null
         ]
       },
-      "/Users/toru/workspace/runteq/mokumoku/spec/models/relationship_spec.rb": {
+      "/Users/toru/workspace/runteq/mokumoku/spec/decorators/relationship_decorator_spec.rb": {
         "lines": [
           1,
           null,
           1,
+          null
+        ]
+      },
+      "/Users/toru/workspace/runteq/mokumoku/app/decorators/relationship_decorator.rb": {
+        "lines": [
           1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null
         ]
       },
       "/Users/toru/workspace/runteq/mokumoku/app/models/relationship.rb": {
         "lines": [
-          1,
-          1,
           1,
           1,
           1,
@@ -61,6 +75,15 @@
       "/Users/toru/workspace/runteq/mokumoku/app/models/application_record.rb": {
         "lines": [
           null,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/toru/workspace/runteq/mokumoku/spec/models/relationship_spec.rb": {
+        "lines": [
+          1,
           null,
           1,
           1,
@@ -177,11 +200,7 @@
           1,
           1,
           1,
-          null,
-          null,
           1,
-          null,
-          null,
           1,
           1,
           null,
@@ -250,17 +269,17 @@
           null,
           null,
           1,
-          0,
+          4,
           null,
           null,
           null,
           1,
-          0,
+          2,
           null,
           null,
           null,
           1,
-          0,
+          12,
           null,
           null
         ]
@@ -301,6 +320,17 @@
         ]
       },
       "/Users/toru/workspace/runteq/mokumoku/spec/requests/profiles_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/toru/workspace/runteq/mokumoku/spec/requests/relationships_spec.rb": {
         "lines": [
           1,
           null,
@@ -529,9 +559,9 @@
           null,
           1,
           null,
-          0,
+          1,
           null,
-          0,
+          1,
           null,
           null,
           1,
@@ -544,9 +574,9 @@
           null,
           1,
           null,
-          0,
+          1,
           null,
-          0,
+          1,
           null,
           null,
           null,
@@ -562,13 +592,13 @@
           null,
           1,
           null,
-          0,
+          1,
           null,
-          0,
+          1,
           null,
-          0,
+          1,
           null,
-          0,
+          1,
           null,
           null,
           1,
@@ -582,13 +612,13 @@
           null,
           1,
           null,
-          0,
+          1,
           null,
-          0,
+          1,
           null,
-          0,
+          1,
           null,
-          0,
+          1,
           null,
           null,
           null,
@@ -953,7 +983,7 @@
           null,
           null,
           null,
-          71,
+          77,
           null,
           1,
           2,
@@ -1142,7 +1172,7 @@
           1,
           null,
           1,
-          191,
+          221,
           null,
           null
         ]
@@ -1222,11 +1252,48 @@
         "lines": [
           1,
           1,
-          6,
+          null,
+          12,
+          null,
+          12,
+          12,
+          12,
           null,
           null,
           1,
-          6,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          12,
+          null,
+          null
+        ]
+      },
+      "/Users/toru/workspace/runteq/mokumoku/app/controllers/relationships_controller.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          4,
+          null,
+          null,
+          1,
+          2,
+          2,
           null,
           null
         ]
@@ -1288,12 +1355,31 @@
           null,
           null,
           1,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
           4,
           null,
           null
         ]
       }
     },
-    "timestamp": 1668485313
+    "timestamp": 1668588059
   }
 }
