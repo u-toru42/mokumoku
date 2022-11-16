@@ -86,7 +86,7 @@ class User < ApplicationRecord
     follower.create(followed_id: user_id)
   end
 
-  # フォロー解除する
+  # フォローを解除する
   def unfollow(user_id)
     follower.find_by(followed_id: user_id).destroy
   end
