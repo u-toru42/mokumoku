@@ -10,8 +10,16 @@
           <div class="d-flex align-items-center mb-4 mb-lg-0">
             <%= image_tag @user.decorate.avatar, class: 'rounded-circle avatar-lg' %>
           </div><br>
+          <div class="d-flex"><br>
+            <%= link_to follows_user_path(@user) do %>
+              <h6>フォロー<%= @following_users.count %></h6>
+            <% end %>&nbsp;&nbsp;
+            <%= link_to followers_user_path(@user) do %>
+              <h6>フォロワー<%= @follower_users.count %></h6>
+            <% end %>
+        </div>
         <!-- Form -->
-        <%= form_with(model: @user, url: mypage_profile_path) do |f| %>
+        <%= form_with(model: @user, url: profile_path) do |f| %>
           <div class="mb-3">
             <%= f.label :email, class: 'form-label' %>
             <%= @user.email %>
@@ -38,18 +46,6 @@
           <%= link_to 'フォローする', user_relationships_path(@user.id), method: :POST, class:"btn-sm btn-success" %>
         <% end %>
         </div><br>
-        <div class="d-inline-flex">
-          <%= image_tag @user.decorate.avatar, class: 'rounded-circle avatar-lg' %>
-        <h4 class="ml-5 m-3"><%= @user.name %></h4>
-      </div>
-      <div class="d-flex"><br>
-        <%= link_to follows_user_path(@user) do %>
-          <h6>フォロー<%= @following_users.count %></h6>
-        <% end %>&nbsp;&nbsp;
-        <%= link_to followers_user_path(@user) do %>
-          <h6>フォロワー<%= @follower_users.count %></h6>
-        <% end %>
-      </div>
     </div>
   </div>
 </div>
