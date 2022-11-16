@@ -115,7 +115,6 @@ ActiveRecord::Schema.define(version: 2022_11_15_035303) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["followed_id"], name: "index_relationships_on_followed_id"
-    t.index ["follower_id", "followed_id"], name: "index_relationships_on_follower_id_and_followed_id", unique: true
     t.index ["follower_id"], name: "index_relationships_on_follower_id"
   end
 
@@ -162,6 +161,8 @@ ActiveRecord::Schema.define(version: 2022_11_15_035303) do
   add_foreign_key "events", "users"
   add_foreign_key "notifications", "users", column: "receiver_id"
   add_foreign_key "notifications", "users", column: "sender_id"
+  add_foreign_key "relationships", "users", column: "followed_id"
+  add_foreign_key "relationships", "users", column: "follower_id"
   add_foreign_key "user_notification_timings", "notification_timings"
   add_foreign_key "user_notification_timings", "users"
   add_foreign_key "user_prefectures", "prefectures"
