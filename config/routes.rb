@@ -24,6 +24,7 @@ Rails.application.routes.draw do
     resources :comments, only: %i[create destroy], module: :events
   end
   resource :profiles, only: %i[show]
+  resources :relationships, only: %i[create destroy]
 
   resources :notifications, only: %i[index show]
   namespace :notifications do
