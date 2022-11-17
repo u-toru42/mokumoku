@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
 class UsersController < ApplicationController
+  include ProfileFollow
+  before_action :user_find
+
   def new
     @user = User.new
   end
@@ -14,25 +17,6 @@ class UsersController < ApplicationController
       flash.now[:danger] = 'ユーザー登録に失敗しました'
       render :new
     end
-  end
-
-  def show
-    # プロファイル全般
-    @user = User.find(id: params[:id])
-    # フォロー関係
-    @events = @user.events.page(params[:page]).reverse_order
-    @following_users = @user.following_user
-    @follower_users = @user.follower_user
-  end
-
-  def follows
-    @user = User.find_by(id: params[:id])
-    @users = @user.following_user.page(params[:page]).per(3).reverse_order
-  end
-
-  def followers
-    @user = User.find_by(id: params[:id])
-    @users = @user.follower_user.page(params[:page]).per(3).reverse_order
   end
 
   def user_params
