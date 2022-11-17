@@ -22,48 +22,6 @@
           null
         ]
       },
-      "/Users/toru/workspace/runteq/mokumoku/app/decorators/profile_decorator.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/toru/workspace/runteq/mokumoku/spec/decorators/relationship_decorator_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          null
-        ]
-      },
-      "/Users/toru/workspace/runteq/mokumoku/app/decorators/relationship_decorator.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
       "/Users/toru/workspace/runteq/mokumoku/app/models/relationship.rb": {
         "lines": [
           1,
@@ -75,15 +33,6 @@
       "/Users/toru/workspace/runteq/mokumoku/app/models/application_record.rb": {
         "lines": [
           null,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/toru/workspace/runteq/mokumoku/spec/models/relationship_spec.rb": {
-        "lines": [
-          1,
           null,
           1,
           1,
@@ -1252,6 +1201,17 @@
         "lines": [
           1,
           1,
+          null
+        ]
+      },
+      "/Users/toru/workspace/runteq/mokumoku/app/controllers/concerns/profile_follow.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
           null,
           12,
           null,
@@ -1266,13 +1226,6 @@
           null,
           null,
           1,
-          0,
-          0,
-          null,
-          null,
-          1,
-          0,
-          0,
           0,
           0,
           null,
@@ -1337,6 +1290,8 @@
           null,
           1,
           1,
+          null,
+          1,
           4,
           null,
           null,
@@ -1349,25 +1304,6 @@
           3,
           3,
           null,
-          null,
-          null,
-          1,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          1,
-          0,
-          0,
-          null,
-          null,
-          1,
-          0,
-          0,
           null,
           null,
           1,
@@ -1377,6 +1313,6 @@
         ]
       }
     },
-    "timestamp": 1668597445
+    "timestamp": 1668670380
   }
 }
