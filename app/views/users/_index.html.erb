@@ -1,6 +1,16 @@
-<div class="one-post card">
-  <p class="caption h4">
-    <%= image_tag user.decorate.avatar, class: 'rounded-circle avatar-lg' %>
-    <%= user.name %>
-  </p>
+<div class="cover-user-index">
+  <div class="container">
+    <div class="row justify-content-center">
+      <% if request.fullpath.match(/.follows/) %>
+        <h1 class="font-weight-normal mt-5 mb-5">フォロー一覧</h1>
+      <% else %>
+        <h1 class="font-weight-normal mt-5 mb-5">フォロワー一覧</h1>
+      <% end %>
+    </div>
+    <div class="row justify-content-center">
+      <!-- collectionに書き換え -->
+      <%= render partial: 'collection', collection: @users, as: "user" %>
+    </div>
+    <%= paginate @users %>
+  </div>
 </div>
