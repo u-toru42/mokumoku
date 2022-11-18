@@ -2,7 +2,7 @@
 
 class UsersController < ApplicationController
   include ProfileFollow
-  before_action :user_find
+  before_action :user_find, only: %i[show follows followers]
 
   def new
     @user = User.new
