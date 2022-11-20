@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 class UsersController < ApplicationController
-  include ProfileFollow
-  before_action :user_find, only: %i[show follows followers]
+  include FollowProfile
+  before_action :find_user, only: %i[show followings followers]
 
   def new
     @user = User.new
