@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-11-20T18:38:12+09:00">2022-11-20T18:38:12+09:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-11-20T20:06:16+09:00">2022-11-20T20:06:16+09:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  95.14%
+  95.69%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.34
+         2.35
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>699</b> relevant lines,
-    <span class="green"><b>665</b> lines covered</span> and
-    <span class="red"><b>34</b> lines missed. </span>
+    <b>696</b> relevant lines,
+    <span class="green"><b>666</b> lines covered</span> and
+    <span class="red"><b>30</b> lines missed. </span>
     (<span class="green">
-  95.14%
+  95.69%
 </span>
 )
   </div>
@@ -93,13 +93,13 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#79898dc50c9ccc76bb3bc1006017aa350a07da35" class="src_link" title="app/controllers/concerns/profile_follow.rb">app/controllers/concerns/profile_follow.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">62.50 %</td>
-            <td class="cell--number">35</td>
-            <td class="cell--number">16</td>
-            <td class="cell--number">10</td>
-            <td class="cell--number">6</td>
-            <td class="cell--number">1.31</td>
+            <td class="strong t-file__name"><a href="#63a187b0a26b33da7ebb690b1eb1cccc6a41ce80" class="src_link" title="app/controllers/concerns/follow_profile.rb">app/controllers/concerns/follow_profile.rb</a></td>
+            <td class="yellow strong cell--number t-file__coverage">81.82 %</td>
+            <td class="cell--number">23</td>
+            <td class="cell--number">11</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">1.82</td>
             
           </tr>
         
@@ -140,8 +140,8 @@
             <td class="strong t-file__name"><a href="#7c54a9884ab5fa87722a20e991ee3d2cca2e18e8" class="src_link" title="app/controllers/profiles_controller.rb">app/controllers/profiles_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">6</td>
-            <td class="cell--number">2</td>
-            <td class="cell--number">2</td>
+            <td class="cell--number">3</td>
+            <td class="cell--number">3</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -173,10 +173,10 @@
             <td class="strong t-file__name"><a href="#53dc9f1105fd6693684dbcbeca46ef0fde332454" class="src_link" title="app/controllers/users_controller.rb">app/controllers/users_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">25</td>
-            <td class="cell--number">13</td>
-            <td class="cell--number">13</td>
+            <td class="cell--number">14</td>
+            <td class="cell--number">14</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.23</td>
+            <td class="cell--number">2.14</td>
             
           </tr>
         
@@ -732,12 +732,12 @@
 </div>
 
       
-        <div class="source_table" id="79898dc50c9ccc76bb3bc1006017aa350a07da35">
+        <div class="source_table" id="63a187b0a26b33da7ebb690b1eb1cccc6a41ce80">
   <div class="header">
-    <h3>app/controllers/concerns/profile_follow.rb</h3>
+    <h3>app/controllers/concerns/follow_profile.rb</h3>
     <h4>
-      <span class="red">
-  62.5%
+      <span class="yellow">
+  81.82%
 </span>
 
       lines covered
@@ -746,9 +746,9 @@
     
 
     <div class="t-line-summary">
-      <b>16</b> relevant lines.
-      <span class="green"><b>10</b> lines covered</span> and
-      <span class="red"><b>6</b> lines missed.</span>
+      <b>11</b> relevant lines.
+      <span class="green"><b>9</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
 
     
@@ -809,7 +809,7 @@
 
             
 
-            <code class="ruby">module ProfileFollow</code>
+            <code class="ruby">module FollowProfile</code>
           </li>
         </div>
       
@@ -842,34 +842,12 @@
 
             
 
-            <code class="ruby">  def index</code>
+            <code class="ruby">  def show; end</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="9">
-            
-            
-
-            
-
-            <code class="ruby">    @users = User.where.not(id: current_user.id)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="10">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="11">
+          <li class="never" data-hits="" data-linenumber="9">
             
             
 
@@ -880,29 +858,29 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="12">
+          <li class="covered" data-hits="1" data-linenumber="10">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  def show</code>
+            <code class="ruby">  def followings</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="13">
-            <span class="hits">12</span>
+          <li class="missed" data-hits="0" data-linenumber="11">
+            
             
 
             
 
-            <code class="ruby">    @user ||= User.find(params[:id])</code>
+            <code class="ruby">    @users = @user.followings.page(params[:page]).reverse_order</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="14">
+          <li class="never" data-hits="" data-linenumber="12">
             
             
 
@@ -913,7 +891,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="15">
+          <li class="never" data-hits="" data-linenumber="13">
             
             
 
@@ -924,62 +902,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="16">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  def follows</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="17">
-            
-            
-
-            
-
-            <code class="ruby">    user = User.find(params[:id])</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="18">
-            
-            
-
-            
-
-            <code class="ruby">    @users = user.follows</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="19">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="20">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="21">
+          <li class="covered" data-hits="1" data-linenumber="14">
             <span class="hits">1</span>
             
 
@@ -990,29 +913,18 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="22">
+          <li class="missed" data-hits="0" data-linenumber="15">
             
             
 
             
 
-            <code class="ruby">    user = User.find(params[:id])</code>
+            <code class="ruby">    @users = @user.followers.page(params[:page]).reverse_order</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="23">
-            
-            
-
-            
-
-            <code class="ruby">    @users = user.followers</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="24">
+          <li class="never" data-hits="" data-linenumber="16">
             
             
 
@@ -1023,29 +935,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="25">
-            
-            
-
-            
-
-            <code class="ruby">  </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="26">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  private</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="27">
+          <li class="never" data-hits="" data-linenumber="17">
             
             
 
@@ -1056,30 +946,41 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="28">
+          <li class="covered" data-hits="1" data-linenumber="18">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  def user_find</code>
+            <code class="ruby">  private</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="29">
+          <li class="never" data-hits="" data-linenumber="19">
             
             
 
             
 
-            <code class="ruby">    # プロフィール全般</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="30">
+          <li class="covered" data-hits="1" data-linenumber="20">
+            <span class="hits">1</span>
             
+
+            
+
+            <code class="ruby">  def find_user</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="12" data-linenumber="21">
+            <span class="hits">12</span>
             
 
             
@@ -1089,40 +990,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="31">
-            
-            
-
-            
-
-            <code class="ruby">    # フォロー関係</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="32">
-            
-            
-
-            
-
-            <code class="ruby">    # @following_users = @user.following_user</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="33">
-            
-            
-
-            
-
-            <code class="ruby">    # @follower_users = @user.follower_user</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="34">
+          <li class="never" data-hits="" data-linenumber="22">
             
             
 
@@ -1133,7 +1001,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="35">
+          <li class="never" data-hits="" data-linenumber="23">
             
             
 
@@ -2278,8 +2146,8 @@
     
 
     <div class="t-line-summary">
-      <b>2</b> relevant lines.
-      <span class="green"><b>2</b> lines covered</span> and
+      <b>3</b> relevant lines.
+      <span class="green"><b>3</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -2330,18 +2198,18 @@
 
             
 
-            <code class="ruby">  include ProfileFollow</code>
+            <code class="ruby">  include FollowProfile</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="5">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">  # before_action :user_find</code>
+            
+
+            <code class="ruby">  before_action :find_user, only: %i[show followings followers]</code>
           </li>
         </div>
       
@@ -2438,7 +2306,7 @@
 
             
 
-            <code class="ruby">    following ||= current_user.relationships.build(follower_id: params[:user_id])</code>
+            <code class="ruby">    following = current_user.relationships.build(follower_id: params[:user_id])</code>
           </li>
         </div>
       
@@ -2822,8 +2690,8 @@
     
 
     <div class="t-line-summary">
-      <b>13</b> relevant lines.
-      <span class="green"><b>13</b> lines covered</span> and
+      <b>14</b> relevant lines.
+      <span class="green"><b>14</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -2874,18 +2742,18 @@
 
             
 
-            <code class="ruby">  include ProfileFollow</code>
+            <code class="ruby">  include FollowProfile</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="5">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">  # before_action :user_find, only: %i[show follows followers]</code>
+            
+
+            <code class="ruby">  before_action :find_user, only: %i[show followings followers]</code>
           </li>
         </div>
       

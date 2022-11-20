@@ -1213,11 +1213,11 @@
           null,
           1,
           1,
-          null,
+          1,
           null
         ]
       },
-      "/Users/toru/workspace/runteq/mokumoku/app/controllers/concerns/profile_follow.rb": {
+      "/Users/toru/workspace/runteq/mokumoku/app/controllers/concerns/follow_profile.rb": {
         "lines": [
           null,
           null,
@@ -1227,31 +1227,19 @@
           1,
           null,
           1,
+          null,
+          1,
           0,
           null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
           null,
           1,
           12,
-          null,
-          null,
-          1,
-          0,
-          0,
-          null,
-          null,
-          1,
-          0,
-          0,
-          null,
-          null,
-          1,
-          null,
-          1,
-          null,
-          0,
-          null,
-          null,
-          null,
           null,
           null
         ]
@@ -1317,7 +1305,7 @@
           null,
           1,
           1,
-          null,
+          1,
           null,
           1,
           4,
@@ -1341,6 +1329,6 @@
         ]
       }
     },
-    "timestamp": 1668937092
+    "timestamp": 1668942376
   }
 }
