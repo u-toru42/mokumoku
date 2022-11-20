@@ -19,12 +19,10 @@
         </div>
         <div class="d-flex">
           <ul>
-            <h6>
+            <h5>
             <%= link_to "#{current_user.followings.count}フォロー", followings_user_path(current_user) %>
-            </h6>
-            <h6>
             <%= link_to "#{current_user.followers.count}フォロワー", followers_user_path(current_user) %>
-            </h6>
+            </h5>
           </ul>
         </div>
       </div>
