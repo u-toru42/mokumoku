@@ -110,12 +110,10 @@ ActiveRecord::Schema.define(version: 2022_11_15_035303) do
   end
 
   create_table "relationships", force: :cascade do |t|
-    t.integer "follower_id"
-    t.integer "followed_id"
+    t.integer "following_id", null: false
+    t.integer "follower_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["followed_id"], name: "index_relationships_on_followed_id"
-    t.index ["follower_id"], name: "index_relationships_on_follower_id"
   end
 
   create_table "user_notification_timings", force: :cascade do |t|
@@ -161,8 +159,6 @@ ActiveRecord::Schema.define(version: 2022_11_15_035303) do
   add_foreign_key "events", "users"
   add_foreign_key "notifications", "users", column: "receiver_id"
   add_foreign_key "notifications", "users", column: "sender_id"
-  add_foreign_key "relationships", "users", column: "followed_id"
-  add_foreign_key "relationships", "users", column: "follower_id"
   add_foreign_key "user_notification_timings", "notification_timings"
   add_foreign_key "user_notification_timings", "users"
   add_foreign_key "user_prefectures", "prefectures"

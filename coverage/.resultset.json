@@ -3,6 +3,8 @@
     "coverage": {
       "/Users/toru/workspace/runteq/mokumoku/spec/support/capybara.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           25,
@@ -12,6 +14,8 @@
       },
       "/Users/toru/workspace/runteq/mokumoku/spec/support/login_macros.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           19,
@@ -24,6 +28,8 @@
       },
       "/Users/toru/workspace/runteq/mokumoku/app/models/relationship.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           1,
@@ -150,6 +156,7 @@
           1,
           1,
           1,
+          null,
           1,
           1,
           null,
@@ -218,16 +225,6 @@
           null,
           null,
           1,
-          4,
-          null,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null,
-          null,
-          1,
           12,
           null,
           null
@@ -270,6 +267,8 @@
       },
       "/Users/toru/workspace/runteq/mokumoku/spec/requests/profiles_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -281,6 +280,8 @@
       },
       "/Users/toru/workspace/runteq/mokumoku/spec/requests/relationships_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -292,6 +293,8 @@
       },
       "/Users/toru/workspace/runteq/mokumoku/spec/system/events_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -487,6 +490,8 @@
       },
       "/Users/toru/workspace/runteq/mokumoku/spec/system/followings_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -551,7 +556,6 @@
           null,
           null,
           1,
-          null,
           1,
           1,
           1,
@@ -576,6 +580,8 @@
       },
       "/Users/toru/workspace/runteq/mokumoku/spec/system/profiles_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -649,6 +655,8 @@
       },
       "/Users/toru/workspace/runteq/mokumoku/spec/system/sessions_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -679,6 +687,8 @@
       },
       "/Users/toru/workspace/runteq/mokumoku/spec/system/users_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -1199,24 +1209,28 @@
       },
       "/Users/toru/workspace/runteq/mokumoku/app/controllers/profiles_controller.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
+          null,
           null
         ]
       },
       "/Users/toru/workspace/runteq/mokumoku/app/controllers/concerns/profile_follow.rb": {
         "lines": [
-          1,
           null,
-          1,
-          1,
           null,
           1,
           null,
-          12,
+          1,
+          1,
           null,
-          12,
-          12,
+          1,
+          0,
+          null,
+          null,
+          1,
           12,
           null,
           null,
@@ -1228,6 +1242,15 @@
           1,
           0,
           0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          0,
+          null,
+          null,
           null,
           null,
           null
@@ -1235,13 +1258,17 @@
       },
       "/Users/toru/workspace/runteq/mokumoku/app/controllers/relationships_controller.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
+          4,
           4,
           4,
           null,
           null,
           1,
+          2,
           2,
           2,
           null,
@@ -1291,6 +1318,7 @@
           1,
           1,
           null,
+          null,
           1,
           4,
           null,
@@ -1313,6 +1341,6 @@
         ]
       }
     },
-    "timestamp": 1668670380
+    "timestamp": 1668937092
   }
 }
